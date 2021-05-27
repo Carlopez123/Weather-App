@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/stylesBg.css" rel="stylesheet" />
+    <link href="css/stylesWeather.css" rel="stylesheet" />
+    <link href="css/stylesModesWeather.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body onload="onLoad()">
+    <section class="scene">
+      <div class=".cloudContent">
+        <img src="asssets/cloud.png" class="clouds1" />
+        <img src="asssets/cloud.png" class="clouds2" />
+        <img src="asssets/cloud.png" class="clouds3" />
+        <img src="asssets/cloud.png" class="clouds4" />
+        <img src="asssets/cloud.png" class="clouds5" />
+        <img src="asssets/cloud.png" class="clouds6" />
+      </div>
+      <div class="sun"></div>
+      <div class="bg">
+        <img src="asssets/police_car.gif" class="car1" />
+        <img src="asssets/police_car.gif" class="car2" />
+      </div>
+      <div id="container" class="contaier">
+        <div class="block">
+          <div id="loader" class="loader">Loading...</div>
+
+          <div id="location"></div>
+          <div id="date"></div>
+          <div id="description"></div>
+        </div>
+
+        <div class="block">
+          <div class="information-container">
+            Temperature:
+            <div class="information" id="temperature"></div>
+          </div>
+          <div class="information-container">
+            Humidity:
+            <div class="information" id="humidity"></div>
+          </div>
+          <div class="information-container">
+            Pressure:
+            <div class="information" id="pressure"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

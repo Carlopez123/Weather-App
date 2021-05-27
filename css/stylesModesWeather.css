@@ -1,0 +1,82 @@
+/*--CLOUDS--*/
+.clouds1 {
+  visibility: hidden;
+
+  z-index: 10;
+  position: absolute;
+  left: -200px;
+  top: 40px;
+  max-width: 230px;
+  animation: clouds 30s linear infinite;
+}
+.clouds2 {
+  visibility: hidden;
+
+  z-index: 10;
+  position: absolute;
+  right: -300px;
+  top: 20px;
+  max-width: 240px;
+  animation: clouds2 45s linear infinite;
+}
+.clouds3 {
+  visibility: hidden;
+
+  z-index: 10;
+  position: absolute;
+  left: -200px;
+  top: 0;
+  max-width: 200px;
+  animation: clouds 20s linear infinite;
+}
+.clouds4 {
+  visibility: hidden;
+
+  z-index: 10;
+  position: absolute;
+  right: -200px;
+  top: -15px;
+  max-width: 200px;
+  animation: clouds2 30s linear infinite;
+}
+.clouds5 {
+  visibility: hidden;
+
+  z-index: 10;
+  position: absolute;
+  right: -400px;
+  top: 45px;
+  max-width: 130px;
+  animation: clouds2 13s linear infinite;
+}
+.clouds6 {
+  visibility: hidden;
+  z-index: 10;
+  position: absolute;
+  left: -300px;
+  top: -35px;
+  max-width: 300px;
+  animation: clouds 50s linear infinite;
+}
+
+@keyframes clouds {
+  0% {
+    transform: translateX(0px);
+  }
+  90%,
+  100% {
+    transform: translateX(calc(100vw + 400px));
+  }
+}
+@keyframes clouds2 {
+  0% {
+    transform: translateX(0px) rotateY(180deg);
+  }
+  90%,
+  100% {
+    transform: translateX(calc(-100vw - 400px)) rotateY(180deg);
+  }
+}
+.show {
+  visibility: inherit;
+}
